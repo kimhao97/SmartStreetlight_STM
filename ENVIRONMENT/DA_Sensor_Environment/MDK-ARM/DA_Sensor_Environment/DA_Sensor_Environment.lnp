@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\da_sensor_environment\startup_stm32f103xb.o"
+".\da_sensor_environment\dwt_stm32_delay.o"
+".\da_sensor_environment\pzem004t.o"
+".\da_sensor_environment\dht11.o"
+".\da_sensor_environment\main.o"
+".\da_sensor_environment\stm32f1xx_it.o"
+".\da_sensor_environment\stm32f1xx_hal_msp.o"
+".\da_sensor_environment\stm32f1xx_hal_gpio_ex.o"
+".\da_sensor_environment\stm32f1xx_hal_adc.o"
+".\da_sensor_environment\stm32f1xx_hal_adc_ex.o"
+".\da_sensor_environment\stm32f1xx_hal_tim.o"
+".\da_sensor_environment\stm32f1xx_hal_tim_ex.o"
+".\da_sensor_environment\stm32f1xx_hal_uart.o"
+".\da_sensor_environment\stm32f1xx_hal.o"
+".\da_sensor_environment\stm32f1xx_hal_rcc.o"
+".\da_sensor_environment\stm32f1xx_hal_rcc_ex.o"
+".\da_sensor_environment\stm32f1xx_hal_gpio.o"
+".\da_sensor_environment\stm32f1xx_hal_dma.o"
+".\da_sensor_environment\stm32f1xx_hal_cortex.o"
+".\da_sensor_environment\stm32f1xx_hal_pwr.o"
+".\da_sensor_environment\stm32f1xx_hal_flash.o"
+".\da_sensor_environment\stm32f1xx_hal_flash_ex.o"
+".\da_sensor_environment\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter ".\DA_Sensor_Environment\DA_Sensor_Environment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DA_Sensor_Environment.map" -o .\DA_Sensor_Environment\DA_Sensor_Environment.axf
